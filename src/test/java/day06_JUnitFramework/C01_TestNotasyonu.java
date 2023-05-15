@@ -35,7 +35,7 @@ public class C01_TestNotasyonu {
      */
 
     WebDriver driver;
-    @Test
+    @Test @Ignore
     public void googleTest(){
         // 1- google anasayfaya gidip, url'in google icerdigini test edin
         mahserin4Atlisi();

@@ -8,11 +8,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C02_Assert {
+public class C03_Assert {
 
     // Amazon'a gidip title'in AMAZON icerdigini test edin
     @Test
-    public void test01() {
+    public void test01(){
         /*
             JUnit calistirilan test method(lar)indan kac tanesinin
             passed,failed veya ignore oldugunu otomatik olarak raporlar
@@ -25,7 +25,7 @@ public class C02_Assert {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("https://www.amazon.com");
         String expectedIcerik = "AMAZON";
-        String actualTitle = driver.getTitle();
+        String actualTitle= driver.getTitle();
         /*
         if (actualTitle.contains(expectedIcerik)){
             System.out.println("Title testi PASSED");
